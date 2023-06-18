@@ -1,0 +1,34 @@
+$default-color: #1F3C5C;
+$second-color: #CC7E50;
+.bg-default {
+  background-color: $default-color !important;
+}
+
+.bg-image-fit {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+.text-header {
+  font-size: 4em;
+}
+
+.hr {
+  width: 50%;
+  border: 5px solid $second-color;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.text-second-color {
+  color: $second-color !important;
+}
+
+.space-lines {
+  white-space: normal;
+  line-height: 50pt
+}
+.text-left {
+  text-align: left !important;
+}
