@@ -1,4 +1,4 @@
-<nav class="navbar bg-default position-fixed w-100" style="z-index: 999999">
+<nav class="navbar bg-default position-sticky w-100">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('images/logo.png') }}" alt="logo" class="logo" width="100" height="24">
@@ -55,7 +55,7 @@
       <img [src]="asset('icons/social/LinkedIn.png')" width="24" height="24" alt="linkedIn">
     </div>
     <div class="col-md-6 text-center mb-5 d-none d-md-block">
-      <img [src]="asset('images/phone.png')" alt="phone_icon" height="300">
+      <img [src]="asset('images/phone.png')" style="position: relative; bottom: 7.5vh; left: 1.2vw" alt="phone_icon" height="300">
     </div>
   </div>
 </section>

@@ -16,7 +16,7 @@ export interface IServices {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, MatIconModule, MatDialogModule],
+  imports: [CommonModule, NgOptimizedImage, MatDialogModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
