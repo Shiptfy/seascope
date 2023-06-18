@@ -1,6 +1,5 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import {MatIconModule} from "@angular/material/icon";
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {DialogComponent} from "./dialog/dialog.component";
 
@@ -63,7 +62,7 @@ export class AppComponent implements OnInit {
   }
 
   private generateServices() {
-    let imageCount: number = 1
+    let imageCount = 1
     for (let i = 1; i < this.servicesTitle.length + 1; i++) {
       if (this.servicesTitle[i - 1] === "Image") {
         this.services.push({
