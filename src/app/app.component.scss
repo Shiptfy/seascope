@@ -30,6 +30,18 @@ $second-color: #CC7E50;
   white-space: normal;
   line-height: 50pt
 }
+
 .text-left {
   text-align: left !important;
+}
+
+.footer {
+  background-color: $second-color !important;
+  width: 100%;
+  color: white !important;
+  padding: 20px;
+  text-align: center;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 20px;
 }
