@@ -12,7 +12,8 @@ $second-color: #CC7E50;
 }
 
 .text-header {
-  font-size: 5vw;
+  font-size: 2.5em;
+  font-weight: bolder;
 }
 
 .hr {
@@ -28,7 +29,9 @@ $second-color: #CC7E50;
 
 .space-lines {
   white-space: normal;
-  line-height: 50pt
+  line-height: 30pt;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .text-left {
