@@ -1,6 +1,5 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import {MatIconModule} from "@angular/material/icon";
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {DialogComponent} from "./dialog/dialog.component";
 
@@ -16,7 +15,7 @@ export interface IServices {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, MatIconModule, MatDialogModule],
+  imports: [CommonModule, NgOptimizedImage, MatDialogModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
@@ -54,7 +53,7 @@ export class AppComponent implements OnInit {
   }
 
   asset(png: string) {
-    return `../assets/${png}`;
+    return `assets/${png}`;
   }
 
 
@@ -63,19 +62,19 @@ export class AppComponent implements OnInit {
   }
 
   private generateServices() {
-    let imageCount: number = 1
+    let imageCount = 1
     for (let i = 1; i < this.servicesTitle.length + 1; i++) {
       if (this.servicesTitle[i - 1] === "Image") {
         this.services.push({
-          image: `../assets/images/image-${imageCount}.png`,
+          image: `assets/images/image-${imageCount}.png`,
         })
         imageCount++
         continue
       }
       this.services.push({
-        iconPath: `../assets/icons/icon-${i}.png`,
+        iconPath: `assets/icons/icon-${i}.png`,
         name: this.servicesTitle[i - 1],
-        backgroundImagePath: `../assets/images/img-${i}.jpg`,
+        backgroundImagePath: `assets/images/img-${i}.jpg`,
         backgroundColor: i === this.servicesTitle.length - 1 ? "rgba(29,147,39,0.8)" : i % 2 === 0 ? "rgba(25,47,72,0.8)" : "rgba(146,91,58,0.8)",
         description: this.servicesDescription[i - 1]
       })

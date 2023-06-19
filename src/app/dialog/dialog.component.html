@@ -1,19 +1,24 @@
+<mat-dialog-actions class="d-flex justify-content-end w-100">
+  <button mat-button mat-dialog-close>
+    <mat-icon>close</mat-icon>
+    Close
+  </button>
+</mat-dialog-actions>
 <mat-dialog-content>
   <div [style.background-image]="'url(' + data.backgroundImagePath + ')'"
+       class="bg-image-fit p-0"
   >
     <div class="container w-100 h-100" [style.background-color]="data.backgroundColor">
-      <div class="row text-center my-5">
+      <div class="row my-5">
         <div class="col-md-6">
           <img [src]="data.iconPath" [title]="data.name" [alt]="data.name" style="width: 50%">
         </div>
         <div class="col-md-6">
           <h2 class="text-white text-header space-lines">{{ data.name || '' | uppercase }}</h2>
-          <p class="text-left"> {{ data.description }} </p>
+          <p class="text-white"> {{ data.description }} </p>
         </div>
       </div>
     </div>
   </div>
 </mat-dialog-content>
-<mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
-</mat-dialog-actions>
+

@@ -1,4 +1,4 @@
-<nav class="navbar bg-default position-fixed w-100" style="z-index: 999999">
+<nav class="navbar bg-default position-sticky w-100">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('images/logo.png') }}" alt="logo" class="logo" width="100" height="24">
@@ -10,20 +10,22 @@
     <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
   </video>
 </header>
-<section>
+<section class="overflow-x-hidden">
   <div class="row justify-content-center">
-    <div class="col-md-3 d-flex align-items-center p-4">
+    <div class="col-lg-3 col-md-4 d-flex align-items-center p-4 justify-content-center">
       <h1 class="text-white fw-bolder text-header space-lines">OUR SERVICES</h1>
     </div>
     <ng-container *ngFor="let service of services">
-      <div *ngIf="!!service?.image" class="col-md-3 bg-image-fit p-5">
+      <div *ngIf="!!service?.image" class="col-lg-3 col-md-4 bg-image-fit p-5">
         <img [src]="service?.image" class="w-100 h-100" alt="">
       </div>
-      <div *ngIf="!service?.image" [style.background-image]="'url(' + service?.backgroundImagePath + ')'"
-           class="col-md-3 bg-image-fit p-0"
-           (click)="openModal(service)"
+      <div
+        *ngIf="!service?.image"
+        [style.background-image]="'url(' + service?.backgroundImagePath + ')'"
+        (click)="openModal(service)"
+        class="col-lg-3 col-md-4 bg-image-fit p-0"
       >
-        <div class="container w-100 h-100" [style.background-color]="service?.backgroundColor">
+        <div class="w-100 h-100" [style.background-color]="service?.backgroundColor">
           <div class=" p-5">
             <div class="row text-center my-5">
               <div class="col-12">
@@ -42,22 +44,35 @@
   </div>
 </section>
 <div class="hr text-second-color"></div>
-<section class="container my-5">
+<section class="container mt-5">
   <div class="row">
     <div class="col-md-6">
-      <h1 class="text-white text-header fw-bolder mb-5">{{"Get Ready" | uppercase}}</h1>
-      <h3 class="text-white mb-0">{{'it seems you interested, kindly submit your inquariti via:' | uppercase}}</h3>
-      <h3 class="text-white mb-0">Email : <a href="mailto:gm@seascopemena.com">gm@seascopemena.com</a></h3>
-      <img [src]="asset('icons/social/facebook.png')" width="24" height="24" alt="facebook">
-      <img [src]="asset('icons/social/instagram.png')" width="24" height="24" alt="instagram">
-      <img [src]="asset('icons/social/twitter.png')" width="24" height="24" alt="twitter">
-      <img [src]="asset('icons/social/whatsapp.png')" width="24" height="24" alt="whatsapp">
-      <img [src]="asset('icons/social/LinkedIn.png')" width="24" height="24" alt="linkedIn">
+      <h1 class="text-white text-header fw-bolder mb-4 space-lines">{{"Get Ready" | uppercase}}</h1>
+      <h2 class="text-white mb-0 ms-3">{{'it seems you interested, kindly submit your inquiry via:' | uppercase}}</h2>
+      <h2 class="text-white mb-0 ms-3">Email : <a href="mailto:marketing@seascopemena.com">marketing@seascopemena.com</a></h2>
+      <img [src]="asset('icons/social/facebook.png')" width="50" height="50" alt="facebook">
+      <img [src]="asset('icons/social/instagram.png')" width="50" height="50" alt="instagram">
+      <img [src]="asset('icons/social/twitter.png')" width="50" height="50" alt="twitter">
+      <img [src]="asset('icons/social/whatsapp.png')" width="50" height="50" alt="whatsapp">
+      <img [src]="asset('icons/social/LinkedIn.png')" width="50" height="50" alt="linkedIn">
     </div>
-    <div class="col-md-6 text-center mb-5 d-none d-md-block">
-      <img [src]="asset('images/phone.png')" alt="phone_icon" height="300">
+    <div class="col-md-6 text-center d-none d-md-block">
+      <img [src]="asset('images/phone.png')" style="position: relative; bottom: 7.5vh; left: 1.2vw" alt="phone_icon"
+           height="300">
     </div>
   </div>
 </section>
+<footer class="footer">
+  Thank you for visiting our website, we hope you enjoyed it.
+</footer>
 
-
+<!--
+@Copyrights Abdelrahman Ahmed
+@Version 1.0.0
+@Date 2023-06-20
+@License All Rights Reserved
+@Email : Abdeelrhman.11@gmail.com
+@Phone : +201144473299
+@Github : AbdelrhmanAh7
+@LinkedIn : https://www.linkedin.com/in/abdelrhman-ahmed-b3913019b/
+-->
