@@ -15,7 +15,8 @@
         </div>
         <div class="col-md-6">
           <h2 class="text-white text-header space-lines my-2">{{ data.name || '' | uppercase }}</h2>
-          <p class="text-white"> {{ data.description }} </p>
+          <h3 style="text-decoration: underline" class="text-white fw-bolder space-lines my-0">{{ data.descriptionTitle || '' | uppercase }}</h3>
+          <h3 class="text-white"> {{ data.description || '' | titlecase }} </h3>
         </div>
       </div>
     </div>
