@@ -13,7 +13,7 @@
 <section class="overflow-x-hidden">
   <div class="row justify-content-center">
     <div class="col-lg-3 col-md-4 d-flex align-items-center p-4 justify-content-center">
-      <h1 class="text-white fw-bolder text-header space-lines">OUR SERVICES</h1>
+      <h1 class="text-white fw-bolder text-header space-lines">{{'Key Differentiators' | uppercase}}</h1>
     </div>
     <ng-container *ngFor="let service of services">
       <div *ngIf="!!service?.image" class="col-lg-3 col-md-4 bg-image-fit p-5">
@@ -49,7 +49,7 @@
     <div class="col-md-6">
       <h1 class="text-white text-header fw-bolder mb-4 space-lines">{{"Get Ready" | uppercase}}</h1>
       <h2 class="text-white mb-0 ms-3">{{'it seems you interested, kindly submit your inquiry via:' | uppercase}}</h2>
-      <h2 class="text-white mb-0 ms-3">Email : <a href="mailto:marketing@seascopemena.com">marketing@seascopemena.com</a></h2>
+      <h2 class="text-white mb-0 ms-3">Email : <a href="mailto:pr@seascopemena.com">pr@seascopemena.com</a></h2>
       <img [src]="asset('icons/social/facebook.png')" width="50" height="50" alt="facebook">
       <img [src]="asset('icons/social/instagram.png')" width="50" height="50" alt="instagram">
       <img [src]="asset('icons/social/twitter.png')" width="50" height="50" alt="twitter">
@@ -63,7 +63,7 @@
   </div>
 </section>
 <footer class="footer">
-  Thank you for visiting our website, we hope you enjoyed it.
+  {{ 'your all - in - one solution for maritime business' | uppercase}}
 </footer>
 
 <!--
