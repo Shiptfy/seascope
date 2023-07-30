@@ -6,7 +6,7 @@
   </div>
 </nav>
 <header>
-  <video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="h-75 w-100">
+  <video #video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" class="h-75 w-100">
     <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
   </video>
 </header>

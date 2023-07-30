@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {DialogComponent} from "./dialog/dialog.component";
@@ -22,6 +22,7 @@ export interface IServices {
 })
 export class AppComponent implements OnInit {
   title = 'seascope';
+  @ViewChild('video') video!: ElementRef<HTMLVideoElement>;
   protected readonly servicesTitle: string[] = [
     "PR Strategy development",
     "Business Excellence",
@@ -93,6 +94,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.generateServices();
+    this.video.nativeElement.play();
   }
 
   private generateServices() {
