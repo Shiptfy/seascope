@@ -6,8 +6,18 @@
   </div>
 </nav>
 <header>
-  <video #video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" playsinline=""
-         data-wf-ignore="true" data-object-fit="cover" class="h-75 w-100">
+  <video #video
+         loop
+         muted
+         autoplay
+         oncanplay="this.play()"
+         onloadedmetadata="this.muted = true"
+         playsinline
+         preload="auto"
+         data-wf-ignore="true"
+         data-object-fit="cover"
+         class="h-75 w-100"
+  >
     <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
   </video>
 </header>
