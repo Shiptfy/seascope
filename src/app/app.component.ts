@@ -23,6 +23,14 @@ export interface IServices {
 export class AppComponent implements OnInit {
   title = 'seascope';
   @ViewChild('video') video!: ElementRef<HTMLVideoElement>;
+  protected readonly featuresTitle: string[] = [
+    "Innovation",
+    "Approach"
+  ];
+  protected readonly featuresDescription: string[] = [
+    "We stay at the forefront of industry trends and leverage cutting-edge tools and techniques to stay ahead of the competition. <b>Client-Centric</b>",
+    "Your success is our priority. We work closely with you to understand your unique challenges and develop customized solutions."
+  ]
   protected readonly servicesTitle: string[] = [
     "PR Strategy development",
     "Business Excellence",
@@ -82,7 +90,8 @@ export class AppComponent implements OnInit {
       title: "Image",
     }
   ]
-  protected readonly services: IServices[] = []
+  protected readonly services: IServices[] = [];
+  protected readonly features: IServices[] = [];
 
   constructor(private readonly _dialog: MatDialog) {
   }
@@ -94,6 +103,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.generateServices();
+    this.generateFeatures()
     this.video.nativeElement.play();
   }
 
@@ -114,6 +124,27 @@ export class AppComponent implements OnInit {
         backgroundColor: i === this.servicesTitle.length - 1 ? "rgba(29,147,39,0.8)" : i % 2 === 0 ? "rgba(25,47,72,0.8)" : "rgba(146,91,58,0.8)",
         descriptionTitle: this.servicesDescription[i - 1]["title"],
         description: this.servicesDescription[i - 1]["description"]
+      })
+    }
+  }
+
+  private generateFeatures() {
+    let imageCount = 1
+    for (let i = 1; i < this.featuresTitle.length + 1; i++) {
+      if (this.featuresTitle[i - 1] === "Image") {
+        this.features.push({
+          image: `assets/images/feature-${i}.jpg`,
+        })
+        imageCount++
+        continue
+      }
+      this.features.push({
+        iconPath: `assets/icons/icon-${i}.png`,
+        name: this.featuresTitle[i - 1],
+        backgroundImagePath: `assets/images/feature-${i}.jpg`,
+        backgroundColor: i === this.featuresTitle.length - 1 ?  "rgba(25,47,72,0.8)" : "rgba(146,91,58,0.8)",
+        descriptionTitle: this.featuresTitle[i - 1],
+        description: this.featuresDescription[i - 1]
       })
     }
   }

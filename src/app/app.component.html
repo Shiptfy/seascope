@@ -1,4 +1,4 @@
-<nav class="navbar bg-default position-sticky w-100">
+<nav class="navbar bg-default position-fixed w-100">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('images/logo.png') }}" alt="logo" class="logo" width="100" height="24">
@@ -21,7 +21,26 @@
     <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
   </video>
 </header>
-<section class="overflow-x-hidden">
+<section id="about-us" class="overflow-x-hidden mb-4">
+  <div class="row justify-content-center">
+    <div class="col-12 d-flex align-items-center p-4 justify-content-center">
+      <h1 class="text-white fw-bolder text-header space-lines">{{'about us' | uppercase}}</h1>
+    </div>
+    <div class="container">
+      <p class="text-light mx-5 fs-5 mb-2 text-center space-lines">
+        <b>At SeaScope MENA</b>, we are your trusted partner for achieving PR excellence and elevating your business to
+        new
+        heights. With a team of seasoned professionals and a commitment to delivering exceptional results, we have
+        become the leading hub for PR and Business Excellence Consultancy in the MENA region. Our mission is simple yet
+        profound – to empower businesses to thrive through strategic communication, reputation management, and
+        operational excellence. We believe that every business has the potential for greatness, and our role is to
+        unlock that potential.
+      </p>
+    </div>
+  </div>
+</section>
+<div class="hr text-second-color"></div>
+<section id="service" class="overflow-x-hidden">
   <div class="row justify-content-center">
     <div class="col-lg-3 col-md-4 d-flex align-items-center p-4 justify-content-center">
       <h1 class="text-white fw-bolder text-header space-lines">{{'Key Differentiators' | uppercase}}</h1>
@@ -52,6 +71,120 @@
         </div>
       </div>
     </ng-container>
+  </div>
+</section>
+
+<section id="why-choose-seascope" class="overflow-x-hidden position-relative">
+  <div class="row p-5" style="background-image: url('assets/images/more-details-bg.png')">
+    <div class="col-lg-6 col-md-12 py-5">
+      <h1
+        class="text-white fw-bolder space-lines-feature" style="font-size: 4.5vw">{{'Why Choose SeaScope MENA ?'}}</h1>
+      <p class="text-light fs-4 mb-2 space-lines">
+        Proven Track Record: With a track record of success across various industries, we have a proven ability to
+        deliver tangible results.
+      </p>
+    </div>
+    <img class="img-fluid d-none d-md-block"
+         style=" position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    right: 0;" src="assets/images/question-image.png">
+  </div>
+</section>
+<div class="row p-0">
+  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
+    <img class="img-fluid" style="max-width: 100px" src="assets/images/Industry-Expertise.png">
+    <p class="text-dark space-lines p-3">
+      <b class="fs-4">Industry Expertise</b> <br/>
+      <span class="fs-5">
+        Our team consists of experts with deep industry knowledge, ensuring that our strategies are tailored to your
+      specific needs.
+      </span>
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-second-color">
+    <img class="img-fluid" style="max-width: 100px" src="assets/images/Innovation.png">
+    <p class="text-light space-lines p-3">
+      <b class="fs-4">Innovation</b> <br/>
+      <span class="fs-5">
+        We stay at the forefront of industry trends and leverage cutting-edge tools and techniques to stay ahead of the competition.
+      </span>
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-default">
+    <img class="img-fluid" style="max-width: 100px" src="assets/images/Client-Centric-Approach.png">
+    <p class="text-light space-lines p-3">
+      <b class="fs-4">Client-Centric Approach</b> <br/>
+      <span class="fs-5">
+ Your success is our priority. We work closely with you to understand your unique challenges and develop customized solutions.      </span>
+    </p>
+  </div>
+  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
+    <img class="img-fluid" style="max-width: 100px" src="assets/images/mission.png">
+    <p class="text-dark space-lines p-3">
+      <b class="fs-4">Mission</b> <br/>
+      <span class="fs-5">
+        To be the catalyst for success, fostering growth and resilience in businesses through innovative communication and excellence strategies
+      </span>
+    </p>
+  </div>
+  <div class="col-lg-12 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-second-color">
+    <img class="img-fluid" style="max-width: 100px" src="assets/images/vision.png">
+    <p class="text-light space-lines p-3">
+      <b class="fs-4">Vision</b> <br/>
+      <span class="fs-5">
+      Lead the industry, empower businesses, and make a lasting impact on the world of PR and business excellence consultancy
+      </span>
+    </p>
+  </div>
+</div>
+<section id="message" class="overflow-x-hidden mb-4" style="background-image: url('assets/images/message-bg.jpg')">
+  <div class="row">
+    <div class="col-lg-4 col-md-12">
+      <img class="img-fluid" style="max-height: fit-content" src="assets/images/effat.jpg" alt="message">
+    </div>
+    <div class="col-lg-8 col-md-12 py-5 container px-md-2 px-lg-5">
+      <h1 class="text-white fw-bolder fs-2 space-lines">{{'Message from the Founder' | uppercase}}</h1>
+      <p class="text-light fs-5 flex-column d-flex ">
+        <span class="mb-2">
+          From our humble beginnings to the dynamic and influential consultancy firm we are today, our journey has been
+        one of unwavering commitment to our mission: empowering businesses to thrive. We firmly believe that every
+        business holds the potential for greatness, and it is our privilege to be the guiding force that unlocks that
+        potential.
+        Our team of seasoned professionals, with their deep industry knowledge and innovative thinking, stands as the
+        backbone of SeaScope MENA. Together, we have forged a reputation for delivering tangible results, consistently
+        exceeding expectations, and setting industry benchmarks.
+        </span>
+        <br>
+        <span class="mb-2">
+          We do not merely provide services; we cultivate partnerships. Your success is not just our business; it is our
+        purpose. We work diligently to understand your unique challenges and craft bespoke solutions that drive growth
+        and resilience. We are not content with the status quo; we are pioneers. We stay at the forefront of industry
+        trends, leveraging cutting-edge tools and techniques to ensure that your business remains ahead of the curve in
+        this ever-evolving world of communication and excellence.P
+        </span>
+        <br>
+        <span class="mb-2">
+        Our vision is clear: to be the global standard-bearer for PR Strategy and Maritime Business Excellence
+        Consultancy. We are here to help you navigate the complexities of the modern business landscape, to transform
+        challenges into opportunities, and to turn dreams into realities.
+        </span>
+        <br>
+        <span class="mb-2">
+        Thank you for considering SeaScope MENA as your trusted partner. Together, let's embark on a journey of
+        boundless possibilities, and let's redefine success, one milestone at a time.
+          </span>
+        <br>
+        <span class="mb-2">
+        With utmost gratitude and enthusiasm,
+        </span>
+        <br>
+        <i>Dr.Effat Mostafa</i>
+        <br>
+        Founder and General Manager
+      </p>
+    </div>
   </div>
 </section>
 <div class="hr text-second-color"></div>

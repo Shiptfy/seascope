@@ -4,6 +4,10 @@ $second-color: #CC7E50;
   background-color: $default-color !important;
 }
 
+nav {
+  z-index: 99999999999999;
+}
+
 .bg-image-fit {
   background-size: cover !important;
   background-position: center !important;
@@ -27,6 +31,19 @@ $second-color: #CC7E50;
   color: $second-color !important;
 }
 
+.bg-second-color {
+  background-color: $second-color !important;
+}
+
+.tabs {
+  background-color: $second-color !important;
+  color: white !important;
+  opacity: 100% !important;
+  width: 120px;
+  height: 6px;
+  border: $second-color !important;
+  border-radius: 10px;
+}
 
 
 .text-left {
@@ -43,11 +60,16 @@ $second-color: #CC7E50;
   font-weight: bold;
   margin-top: 20px;
 }
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
   .space-lines {
     white-space: normal;
     line-height: 2em;
+  }
+  .space-lines-feature {
+    white-space: normal;
+    line-height: 1.5em;
   }
 }
 
@@ -57,4 +79,17 @@ $second-color: #CC7E50;
     white-space: normal;
     line-height: 1.5em;
   }
+  .space-lines-feature {
+    white-space: normal;
+    line-height: 1em;
+  }
+}
+
+.text-second-color {
+  color: $second-color !important;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
 }
