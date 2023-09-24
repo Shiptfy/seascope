@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MatDialog, MatDialogModule} from "@angular/material/dialog";
 import {DialogComponent} from "./dialog/dialog.component";
+import {CarouselModule, OwlOptions} from "ngx-owl-carousel-o";
 
 export interface IServices {
   iconPath?: string;
@@ -16,12 +17,39 @@ export interface IServices {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage, MatDialogModule],
+  imports: [CommonModule, NgOptimizedImage, MatDialogModule, CarouselModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   title = 'seascope';
+  limit: number = 10; // <==== Edit this number to limit API results
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    autoplay: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: true,
+    margin: 10,
+    navSpeed: 700,
+    navText: ['Previous', 'Next'],
+    responsive: {
+      0: {
+        items: 3,
+      },
+      400: {
+        items: 2,
+      },
+      740: {
+        items: 3,
+      },
+      940: {
+        items: 4,
+      },
+    },
+    nav: true,
+  };
   @ViewChild('video') video!: ElementRef<HTMLVideoElement>;
   protected readonly featuresTitle: string[] = [
     "Innovation",

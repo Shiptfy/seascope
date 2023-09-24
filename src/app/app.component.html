@@ -1,11 +1,50 @@
-<nav class="navbar bg-default position-fixed w-100">
+<nav class="navbar w-100 position-fixed navbar-expand-lg bg-default">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('images/logo.png') }}" alt="logo" class="logo" width="100" height="24">
     </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon text-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto tex mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why-choose-seascope">Why Choose SeaScope MENA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mission">Mission & Vision</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#founder">Founder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#board">Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
-<header>
+<header id="home">
   <video #video
          loop
          muted
@@ -21,9 +60,9 @@
     <source src="{{ asset('video/intro.mp4') }}" type="video/mp4">
   </video>
 </header>
-<section id="about-us" class="overflow-x-hidden mb-4">
+<section id="about-us" class="overflow-x-hidden">
   <div class="row justify-content-center">
-    <div class="col-12 d-flex align-items-center p-4 justify-content-center">
+    <div class="col-12 d-flex align-items-center justify-content-center">
       <h1 class="text-white fw-bolder text-header space-lines">{{'about us' | uppercase}}</h1>
     </div>
     <div class="container">
@@ -120,7 +159,7 @@
  Your success is our priority. We work closely with you to understand your unique challenges and develop customized solutions.      </span>
     </p>
   </div>
-  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
+  <div id="mission" class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
     <img class="img-fluid" style="max-width: 100px" src="assets/images/mission.png">
     <p class="text-dark space-lines p-3">
       <b class="fs-4">Mission</b> <br/>
@@ -139,7 +178,7 @@
     </p>
   </div>
 </div>
-<section id="message" class="overflow-x-hidden mb-4" style="background-image: url('assets/images/message-bg.jpg')">
+<section id="founder" class="overflow-x-hidden mb-4" style="background-image: url('assets/images/message-bg.jpg')">
   <div class="row">
     <div class="col-lg-4 col-md-12">
       <img class="img-fluid" style="max-height: fit-content" src="assets/images/effat.jpg" alt="message">
@@ -147,7 +186,7 @@
     <div class="col-lg-8 col-md-12 py-5 container px-md-2 px-lg-5">
       <h1 class="text-white fw-bolder fs-2 space-lines">{{'Message from the Founder' | uppercase}}</h1>
       <p class="text-light fs-5 flex-column d-flex ">
-        <span class="mb-2">
+        <span class="mb-3">
           From our humble beginnings to the dynamic and influential consultancy firm we are today, our journey has been
         one of unwavering commitment to our mission: empowering businesses to thrive. We firmly believe that every
         business holds the potential for greatness, and it is our privilege to be the guiding force that unlocks that
@@ -157,7 +196,7 @@
         exceeding expectations, and setting industry benchmarks.
         </span>
         <br>
-        <span class="mb-2">
+        <span class="mb-3">
           We do not merely provide services; we cultivate partnerships. Your success is not just our business; it is our
         purpose. We work diligently to understand your unique challenges and craft bespoke solutions that drive growth
         and resilience. We are not content with the status quo; we are pioneers. We stay at the forefront of industry
@@ -165,30 +204,65 @@
         this ever-evolving world of communication and excellence.P
         </span>
         <br>
-        <span class="mb-2">
+        <span class="mb-3">
         Our vision is clear: to be the global standard-bearer for PR Strategy and Maritime Business Excellence
         Consultancy. We are here to help you navigate the complexities of the modern business landscape, to transform
         challenges into opportunities, and to turn dreams into realities.
         </span>
         <br>
-        <span class="mb-2">
+        <span class="mb-3">
         Thank you for considering SeaScope MENA as your trusted partner. Together, let's embark on a journey of
         boundless possibilities, and let's redefine success, one milestone at a time.
           </span>
         <br>
-        <span class="mb-2">
+        <span class="mb-3">
         With utmost gratitude and enthusiasm,
         </span>
         <br>
-        <i>Dr.Effat Mostafa</i>
-        <br>
+        <b><i>Dr.Effat Mostafa</i></b>
         Founder and General Manager
       </p>
     </div>
   </div>
 </section>
+<section id="board" class="row justify-content-center">
+  <h1 class="text-center text-white fw-bolder my-5 fs-2 space-lines">{{'meet our advisory board' | uppercase}}</h1>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="slide m-auto col-md-12 col-lg-7">
+        <img class="img-fluid" src="assets/images/founder-1.jpg"/>
+        <h2 class="text-light fst-italic fw-bolder">Eng. Ahmed Sharaf</h2>
+        <h3 class="text-light">CEO of Academy Company for Information & Communication
+          Technology</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slide m-auto col-12 col-lg-7">
+        <img class="img-fluid" src="assets/images/founder-2.jpg"/>
+        <h2 class="text-light fst-italic fw-bolder">
+          Capt. Rami Al Breiki
+        </h2>
+        <h3 class="text-light">Co-founder NEONAUTICA</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slide m-auto col-md-12 col-lg-7">
+        <img src="assets/images/founder-3.jpg"/>
+        <h2 class="text-light fst-italic fw-bolder">Fazel A. Fazelbhoy</h2>
+        <h3 class="text-light">CEO of Synergy Offshore</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="slide m-auto col-md-12 col-lg-7">
+        <img src="assets/images/founder-4.jpeg"/>
+        <h2 class="text-light fst-italic fw-bolder">Jasmin Fichte</h2>
+        <h3 class="text-light">Managing Partner at Fichte & Co Lawfirm, Dubai office</h3>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</section>
 <div class="hr text-second-color"></div>
-<section class="container mt-5">
+<section id="contact-us" class="container mt-5">
   <div class="row">
     <div class="col-12 d-md-flex d-lg-block align-items-center p-4 justify-content-center">
       <h1 class="text-white text-header fw-bolder mb-4 space-lines ">{{"Get Ready" | uppercase}}</h1>
