@@ -1,4 +1,4 @@
-<nav class="navbar w-100 position-fixed navbar-expand-lg bg-default">
+<nav class="navbar w-100 position-fixed navbar-expand-lg bg-body-tertiary bg-default">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="{{ asset('images/logo.png') }}" alt="logo" class="logo" width="100" height="24">
@@ -20,7 +20,7 @@
           <a class="nav-link active" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-us">About us</a>
+          <a class="nav-link" href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#service">Services</a>
@@ -35,7 +35,7 @@
           <a class="nav-link" href="#founder">Founder</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#board">Board</a>
+          <a class="nav-link" href="#board">Advisory Board</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -114,13 +114,17 @@
 </section>
 
 <section id="why-choose-seascope" class="overflow-x-hidden position-relative">
-  <div class="row p-5" style="background-image: url('assets/images/more-details-bg.png')">
+  <div class="row p-5"
+       style="
+       background-image: url('assets/images/more-details-bg.jpg');
+       background-attachment: fixed;
+       background-repeat: no-repeat">
     <div class="col-lg-6 col-md-12 py-5">
       <h1
         class="text-white fw-bolder space-lines-feature" style="font-size: 4.5vw">{{'Why Choose SeaScope MENA ?'}}</h1>
       <p class="text-light fs-4 mb-2 space-lines">
         Proven Track Record: With a track record of success across various industries, we have a proven ability to
-        deliver tangible results.
+        deliver tangible results
       </p>
     </div>
     <img class="img-fluid d-none d-md-block"
@@ -132,45 +136,46 @@
   </div>
 </section>
 <div class="row p-0">
-  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
-    <img class="img-fluid" style="max-width: 100px" src="assets/images/Industry-Expertise.png">
-    <p class="text-dark space-lines p-3">
+  <div class="col-lg-6 col-md-12 m-0 row justify-content-evenly align-items-center p-3 bg-light">
+    <img class="img-fluid col-3" style="max-width: 100px" src="assets/images/Industry-Expertise.png">
+    <p class="text-dark space-lines col-9 p-3">
       <b class="fs-4">Industry Expertise</b> <br/>
       <span class="fs-5">
         Our team consists of experts with deep industry knowledge, ensuring that our strategies are tailored to your
-      specific needs.
+      specific needs
       </span>
     </p>
   </div>
-  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-second-color">
-    <img class="img-fluid" style="max-width: 100px" src="assets/images/Innovation.png">
-    <p class="text-light space-lines p-3">
+  <div class="col-lg-6 col-md-12 m-0 row justify-content-evenly align-items-center p-3 bg-second-color">
+    <img class="img-fluid col-3" style="max-width: 100px" src="assets/images/Innovation.png"
+         alt="SeaScope MENA innovation">
+    <p class="text-light space-lines col-9 p-3">
       <b class="fs-4">Innovation</b> <br/>
       <span class="fs-5">
-        We stay at the forefront of industry trends and leverage cutting-edge tools and techniques to stay ahead of the competition.
+        We stay at the forefront of industry trends and leverage cutting-edge tools and techniques to stay ahead of the competition
       </span>
     </p>
   </div>
-  <div class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-default">
-    <img class="img-fluid" style="max-width: 100px" src="assets/images/Client-Centric-Approach.png">
-    <p class="text-light space-lines p-3">
+  <div class="col-lg-6 col-md-12 m-0 row justify-content-evenly align-items-center p-3 bg-default">
+    <img class="img-fluid col-3" style="max-width: 100px" src="assets/images/Client-Centric-Approach.png">
+    <p class="text-light space-lines col-9 p-3">
       <b class="fs-4">Client-Centric Approach</b> <br/>
       <span class="fs-5">
- Your success is our priority. We work closely with you to understand your unique challenges and develop customized solutions.      </span>
+ Your success is our priority. We work closely with you to understand your unique challenges and develop customized solutions</span>
     </p>
   </div>
-  <div id="mission" class="col-lg-6 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-light">
-    <img class="img-fluid" style="max-width: 100px" src="assets/images/mission.png">
-    <p class="text-dark space-lines p-3">
+  <div id="mission" class="col-lg-6 col-md-12 m-0 row justify-content-evenly align-items-center p-3 bg-light">
+    <img class="img-fluid col-3" style="max-width: 100px" src="assets/images/mission.png">
+    <p class="text-dark space-lines col-9 p-3">
       <b class="fs-4">Mission</b> <br/>
       <span class="fs-5">
         To be the catalyst for success, fostering growth and resilience in businesses through innovative communication and excellence strategies
       </span>
     </p>
   </div>
-  <div class="col-lg-12 col-md-12 m-0 d-flex justify-content-evenly align-items-center p-3 bg-second-color">
-    <img class="img-fluid" style="max-width: 100px" src="assets/images/vision.png">
-    <p class="text-light space-lines p-3">
+  <div class="col-lg-12 col-md-12 m-0 row justify-content-evenly align-items-center p-3 bg-second-color">
+    <img class="img-fluid col-3" style="max-width: 100px" src="assets/images/vision.png">
+    <p class="text-light space-lines col-9 p-3">
       <b class="fs-4">Vision</b> <br/>
       <span class="fs-5">
       Lead the industry, empower businesses, and make a lasting impact on the world of PR and business excellence consultancy
@@ -178,14 +183,16 @@
     </p>
   </div>
 </div>
-<section id="founder" class="overflow-x-hidden mb-4" style="background-image: url('assets/images/message-bg.jpg')">
+<section id="founder" class="overflow-x-hidden mb-4"
+         style="background-image: url('assets/images/message-bg.jpg'); background-attachment: fixed; background-repeat: no-repeat">
   <div class="row">
     <div class="col-lg-4 col-md-12">
-      <img class="img-fluid" style="max-height: fit-content" src="assets/images/effat.jpg" alt="message">
+      <img class="img-fluid" style="max-height: fit-content; width: 100% !important;" src="assets/images/effat.jpg"
+           alt="message">
     </div>
     <div class="col-lg-8 col-md-12 py-5 container px-md-2 px-lg-5">
-      <h1 class="text-white fw-bolder fs-2 space-lines">{{'Message from the Founder' | uppercase}}</h1>
-      <p class="text-light fs-5 flex-column d-flex ">
+      <h1 class="text-white fw-bolder fs-2 space-lines container">{{'Message from the Founder' | uppercase}}</h1>
+      <p class="text-light fs-5 flex-column d-flex container">
         <span class="mb-3">
           From our humble beginnings to the dynamic and influential consultancy firm we are today, our journey has been
         one of unwavering commitment to our mission: empowering businesses to thrive. We firmly believe that every
@@ -201,7 +208,7 @@
         purpose. We work diligently to understand your unique challenges and craft bespoke solutions that drive growth
         and resilience. We are not content with the status quo; we are pioneers. We stay at the forefront of industry
         trends, leveraging cutting-edge tools and techniques to ensure that your business remains ahead of the curve in
-        this ever-evolving world of communication and excellence.P
+        this ever-evolving world of communication and excellence.
         </span>
         <br>
         <span class="mb-3">
@@ -227,17 +234,28 @@
 </section>
 <section id="board" class="row justify-content-center">
   <h1 class="text-center text-white fw-bolder my-5 fs-2 space-lines">{{'meet our advisory board' | uppercase}}</h1>
-  <owl-carousel-o [options]="customOptions">
+  <owl-carousel-o
+    class="px-5" [options]="customOptions">
     <ng-template carouselSlide>
-      <div class="slide m-auto col-md-12 col-lg-7">
-        <img class="img-fluid" src="assets/images/founder-1.jpg"/>
+      <div (click)="openModalBoard(
+      0 ,
+      'Eng. Ahmed Sharaf' ,
+      'CEO of Academy Company for Information & Communication Technology' , 'assets/images/founder-1.jpg')"
+           class="slide m-auto">
+        <img class="img-fluid"
+             alt="Eng. Ahmed Sharaf , CEO of Academy Company for Information & Communication
+                  Technology"
+             src="assets/images/founder-1.jpg"/>
         <h2 class="text-light fst-italic fw-bolder">Eng. Ahmed Sharaf</h2>
-        <h3 class="text-light">CEO of Academy Company for Information & Communication
+        <h3 class="text-light text-truncate">CEO of Academy Company for Information & Communication
           Technology</h3>
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="slide m-auto col-12 col-lg-7">
+      <div (click)="openModalBoard(
+      1,
+      'Capt. Rami Al Breiki' ,
+      'Co-founder NEONAUTICA' , 'assets/images/founder-2.jpg')" class="slide m-auto">
         <img class="img-fluid" src="assets/images/founder-2.jpg"/>
         <h2 class="text-light fst-italic fw-bolder">
           Capt. Rami Al Breiki
@@ -246,17 +264,73 @@
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="slide m-auto col-md-12 col-lg-7">
+      <div (click)="openModalBoard(
+      2,
+      'Fazel A. Fazelbhoy' ,
+      'CEO of Synergy Offshore' , 'assets/images/founder-3.jpg')" class="slide m-auto">
         <img src="assets/images/founder-3.jpg"/>
         <h2 class="text-light fst-italic fw-bolder">Fazel A. Fazelbhoy</h2>
         <h3 class="text-light">CEO of Synergy Offshore</h3>
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="slide m-auto col-md-12 col-lg-7">
+      <div (click)="openModalBoard(
+      3,
+      'Jasmin Fichte' ,
+      'Managing Partner at Fichte & Co Lawfirm, Dubai office' , 'assets/images/founder-4.jpeg')" class="slide m-auto">
         <img src="assets/images/founder-4.jpeg"/>
         <h2 class="text-light fst-italic fw-bolder">Jasmin Fichte</h2>
-        <h3 class="text-light">Managing Partner at Fichte & Co Lawfirm, Dubai office</h3>
+        <h3 class="text-light text-truncate">Managing Partner at Fichte & Co Lawfirm, Dubai office</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div (click)="openModalBoard(
+      4,
+      'Danial Kaabi' ,
+      'CEO @ Sea Horizon Offshore Marine Services l Delivering excellence in\n'+
+'          maritime & offshore globally l Seatrade Maritime Club Ambassador, Qatar I YoungShip UAE Board I Entrepreneur\n'+
+'          at core I Building successful businesses' , 'assets/images/founder-5.jpg')" class="slide m-auto">
+        <img src="assets/images/founder-5.jpg"/>
+        <h2 class="text-light fst-italic fw-bolder">Danial Kaabi</h2>
+        <h3 class="text-light text-truncate">CEO @ Sea Horizon Offshore Marine Services l Delivering excellence in
+          maritime & offshore globally l Seatrade Maritime Club Ambassador, Qatar I YoungShip UAE Board I Entrepreneur
+          at core I Building successful businesses</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div (click)="openModalBoard(
+      5,
+      'Mohamed Ajjan' ,
+      'Fleet Manager OSV at Zakher Marine International' , 'assets/images/founder-6.png')" class="slide m-auto">
+        <img src="assets/images/founder-6.png"/>
+        <h2 class="text-light fst-italic fw-bolder">Mohamed Ajjan</h2>
+        <h3 class="text-light text-truncate">Fleet Manager OSV at Zakher Marine International</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div (click)="openModalBoard(
+      6,
+      'Lars Seistrup' ,
+      'A marine engineer and degree in engineering by background' , 'assets/images/founder-7.png')"
+           class="slide m-auto">
+        <img src="assets/images/founder-7.png"/>
+        <h2 class="text-light fst-italic fw-bolder">Lars Seistrup</h2>
+        <h3 class="text-light text-truncate">A marine engineer and degree in engineering by background</h3>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div (click)="openModalBoard(
+      7,
+      'Karim Hasab El-Nabi Mohamed' ,
+      'Prominent figure in the maritime industry, celebrated for his expertise,\n'+
+'advisory role, and entrepreneurial ventures that have made a significant impact on the maritime\n'+
+'sector.' , 'assets/images/founder-8.png')"
+           class="slide m-auto">
+        <img src="assets/images/founder-8.jpeg"/>
+        <h2 class="text-light fst-italic fw-bolder">Karim Hasab El-Nabi Mohamed</h2>
+        <h3 class="text-light text-truncate">Prominent figure in the maritime industry, celebrated for his expertise,
+          advisory role, and entrepreneurial ventures that have made a significant impact on the maritime
+          sector.</h3>
       </div>
     </ng-template>
   </owl-carousel-o>
