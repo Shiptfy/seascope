@@ -9,7 +9,7 @@
     "test": "ng test",
     "dev:ssr": "ng run seascope:serve-ssr",
     "serve:ssr": "node dist/seascope/server/main.js",
-    "build:ssr": "ng build --output-path docs --base-href /seascope/ && ng run seascope:server",
+    "build:ssr": "ng build  && ng run seascope:server",
     "prerender": "ng run seascope:prerender"
   },
   "private": true,
