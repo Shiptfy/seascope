@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.generateServices();
     this.generateFeatures()
-    this.video.nativeElement.play();
+    if (this.video) this.video.nativeElement.play();
   }
 
   private generateServices() {
@@ -288,7 +288,7 @@ export class AppComponent implements OnInit {
     "Beyond his role as a head of operations and logistics, Karim is a forward-thinking entrepreneur. Through Marihub, he envisions a more interconnected maritime industry, fostering relationships between ship owners, ports, and local service providers in the UAE. His innovative approach builds a network that creates value for all users of the portal, fostering collaboration and efficiency in the maritime ecosystem.\n" +
     "\n" +
     "Karim Hasab El-Nabi's enduring commitment to innovation, excellence, and industry transformation has solidified his place as a visionary leader in the maritime sector. His contributions continue to shape the future of maritime operations and connectivity, positioning him as a driving force in the industry."
-    ]
+  ]
 
   openModalBoard(number: number, name: string, title: string, imgPath: string) {
     this._dialog.open(DialogBoardComponent, {

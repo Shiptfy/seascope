@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/seascope",
+            "outputPath": "dist/seascope/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "seascope:build:production"
+              "buildTarget": "seascope:build:production"
             },
             "development": {
-              "browserTarget": "seascope:build:development"
+              "buildTarget": "seascope:build:development"
             },
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "seascope:build"
+            "buildTarget": "seascope:build"
           }
         },
         "test": {
@@ -121,6 +121,61 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy"
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/seascope/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "seascope:build:development",
+              "serverTarget": "seascope:server:development"
+            },
+            "production": {
+              "browserTarget": "seascope:build:production",
+              "serverTarget": "seascope:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "seascope:build:production",
+              "serverTarget": "seascope:server:production"
+            },
+            "development": {
+              "browserTarget": "seascope:build:development",
+              "serverTarget": "seascope:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
