@@ -25,8 +25,8 @@ jobs:
       - name: Build Angular app
         run: npm run build:ssr
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
