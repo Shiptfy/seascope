@@ -1,0 +1,413 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.2",
+  "deps": {
+    "@angular/animations": "^17.0.4",
+    "@angular/cdk": "^17.0.1",
+    "@angular/common": "^17.0.4",
+    "@angular/compiler": "^17.0.4",
+    "@angular/core": "^17.0.4",
+    "@angular/forms": "^17.0.4",
+    "@angular/material": "^17.0.1",
+    "@angular/platform-browser": "^17.0.4",
+    "@angular/platform-browser-dynamic": "^17.0.4",
+    "@angular/platform-server": "^17.0.4",
+    "@angular/router": "^17.0.4",
+    "@angular/ssr": "^17.0.3",
+    "bootstrap": "^5.3.0",
+    "express": "^4.18.2",
+    "ngx-owl-carousel-o": "^17.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.3",
+    "@angular-eslint/builder": "17.1.0",
+    "@angular-eslint/eslint-plugin": "17.1.0",
+    "@angular-eslint/eslint-plugin-template": "17.1.0",
+    "@angular-eslint/schematics": "^17.1.0",
+    "@angular-eslint/template-parser": "17.1.0",
+    "@angular/cli": "~17.0.3",
+    "@angular/compiler-cli": "^17.0.4",
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "^5.1.4",
+    "@types/node": "^18.18.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "angular-cli-ghpages": "^1.0.6",
+    "eslint": "^8.53.0",
+    "jasmine-core": "^5.1.1",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": ">=5.2 <5.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".github/workflows/jekyll-gh-pages.yml",
+        "hash": "2282276520538835066"
+      },
+      {
+        "file": ".github/workflows/main.yml",
+        "hash": "8075873077039080265"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13044518069027839699"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "15080481267891642500"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "9071409644828437886"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "7204280050994738583"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "17361892170929826403"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "5331566439708925252"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "17038929134016848735"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "README.md",
+        "hash": "833017205197590881"
+      },
+      {
+        "file": "angular.json",
+        "hash": "2824225710778509238"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1756380289643269311"
+      },
+      {
+        "file": "package.json",
+        "hash": "353406460714713322"
+      },
+      {
+        "file": "server.ts",
+        "hash": "3921093161320458565"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "13836309505009427730"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "12741126939043494084"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "11671527237302008130"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "8273953525717256033"
+      },
+      {
+        "file": "src/app/app.config.server.ts",
+        "hash": "5453933253787480806"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "13656563249770631274"
+      },
+      {
+        "file": "src/app/dialog/dialog.component.html",
+        "hash": "14850309058813982679"
+      },
+      {
+        "file": "src/app/dialog/dialog.component.scss",
+        "hash": "588750406995276288"
+      },
+      {
+        "file": "src/app/dialog/dialog.component.spec.ts",
+        "hash": "14399528018624124515"
+      },
+      {
+        "file": "src/app/dialog/dialog.component.ts",
+        "hash": "12401458949526644420"
+      },
+      {
+        "file": "src/app/dialog-board/dialog-board.component.html",
+        "hash": "1419695843105795213"
+      },
+      {
+        "file": "src/app/dialog-board/dialog-board.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/dialog-board/dialog-board.component.spec.ts",
+        "hash": "12677577755912917810"
+      },
+      {
+        "file": "src/app/dialog-board/dialog-board.component.ts",
+        "hash": "16207295369452913991"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/i18n/ar.json",
+        "hash": "6891684868646260511"
+      },
+      {
+        "file": "src/assets/i18n/en.json",
+        "hash": "17796937892567131083"
+      },
+      {
+        "file": "src/assets/icons/icon-1.png",
+        "hash": "119171231616392306"
+      },
+      {
+        "file": "src/assets/icons/icon-10.png",
+        "hash": "10136468212669845491"
+      },
+      {
+        "file": "src/assets/icons/icon-2.png",
+        "hash": "17127799955625152380"
+      },
+      {
+        "file": "src/assets/icons/icon-3.png",
+        "hash": "13739087288165598262"
+      },
+      {
+        "file": "src/assets/icons/icon-4.png",
+        "hash": "13691878065879030981"
+      },
+      {
+        "file": "src/assets/icons/icon-5.png",
+        "hash": "2345486930799849131"
+      },
+      {
+        "file": "src/assets/icons/icon-6.png",
+        "hash": "15402690585450204058"
+      },
+      {
+        "file": "src/assets/icons/icon-7.png",
+        "hash": "12948249279674422898"
+      },
+      {
+        "file": "src/assets/icons/icon-9.png",
+        "hash": "1706095994834728496"
+      },
+      {
+        "file": "src/assets/icons/social/LinkedIn.png",
+        "hash": "819790665494758559"
+      },
+      {
+        "file": "src/assets/icons/social/facebook.png",
+        "hash": "13200615392065211396"
+      },
+      {
+        "file": "src/assets/icons/social/instagram.png",
+        "hash": "9650184322565540247"
+      },
+      {
+        "file": "src/assets/icons/social/twitter.png",
+        "hash": "914209760145331631"
+      },
+      {
+        "file": "src/assets/icons/social/whatsapp.png",
+        "hash": "10507233575819428178"
+      },
+      {
+        "file": "src/assets/images/Client-Centric-Approach.png",
+        "hash": "16225246906060936126"
+      },
+      {
+        "file": "src/assets/images/Industry-Expertise.png",
+        "hash": "4177807299741116229"
+      },
+      {
+        "file": "src/assets/images/Innovation.png",
+        "hash": "1559452424576266323"
+      },
+      {
+        "file": "src/assets/images/effat.jpg",
+        "hash": "15799089257449178259"
+      },
+      {
+        "file": "src/assets/images/feature-1.jpg",
+        "hash": "18380245086437001750"
+      },
+      {
+        "file": "src/assets/images/feature-2.jpg",
+        "hash": "2907701250656839918"
+      },
+      {
+        "file": "src/assets/images/founder-1.jpg",
+        "hash": "15525478455603154284"
+      },
+      {
+        "file": "src/assets/images/founder-2.jpg",
+        "hash": "2995212585186270105"
+      },
+      {
+        "file": "src/assets/images/founder-3.jpg",
+        "hash": "15085896931710490241"
+      },
+      {
+        "file": "src/assets/images/founder-4.jpeg",
+        "hash": "6810497039792778074"
+      },
+      {
+        "file": "src/assets/images/founder-5.jpg",
+        "hash": "2654313861058119866"
+      },
+      {
+        "file": "src/assets/images/founder-6.png",
+        "hash": "9288158054438919516"
+      },
+      {
+        "file": "src/assets/images/founder-7.png",
+        "hash": "17608826142773725535"
+      },
+      {
+        "file": "src/assets/images/founder-8.jpeg",
+        "hash": "6991762198639839536"
+      },
+      {
+        "file": "src/assets/images/image-1.png",
+        "hash": "15663619441435399453"
+      },
+      {
+        "file": "src/assets/images/image-2.png",
+        "hash": "5741538201216860355"
+      },
+      {
+        "file": "src/assets/images/img-1.jpg",
+        "hash": "16552077892378461321"
+      },
+      {
+        "file": "src/assets/images/img-10.jpg",
+        "hash": "3051015631542917263"
+      },
+      {
+        "file": "src/assets/images/img-2.jpg",
+        "hash": "2936710446530441707"
+      },
+      {
+        "file": "src/assets/images/img-3.jpg",
+        "hash": "10929641592213486101"
+      },
+      {
+        "file": "src/assets/images/img-4.jpg",
+        "hash": "5144915064936691379"
+      },
+      {
+        "file": "src/assets/images/img-5.jpg",
+        "hash": "7171315520275920828"
+      },
+      {
+        "file": "src/assets/images/img-6.jpg",
+        "hash": "17202964085608746421"
+      },
+      {
+        "file": "src/assets/images/img-7.jpg",
+        "hash": "16889486589211594276"
+      },
+      {
+        "file": "src/assets/images/img-9.jpg",
+        "hash": "5803588407984116778"
+      },
+      {
+        "file": "src/assets/images/logo.png",
+        "hash": "5382298942257666958"
+      },
+      {
+        "file": "src/assets/images/message-bg.jpg",
+        "hash": "2935699314845704013"
+      },
+      {
+        "file": "src/assets/images/mission.png",
+        "hash": "9370407858410637455"
+      },
+      {
+        "file": "src/assets/images/more-details-bg.jpg",
+        "hash": "4266748389713439666"
+      },
+      {
+        "file": "src/assets/images/phone.png",
+        "hash": "10248122150242463935"
+      },
+      {
+        "file": "src/assets/images/question-image.png",
+        "hash": "6729418607300680642"
+      },
+      {
+        "file": "src/assets/images/vision.png",
+        "hash": "141632015038094325"
+      },
+      {
+        "file": "src/assets/video/intro.mp4",
+        "hash": "17000462677013148436"
+      },
+      {
+        "file": "src/assets/video/why_choose_sea_scope_mena.mp4",
+        "hash": "15958190506820205141"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "504376763750114288"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "15844703812058560214"
+      },
+      {
+        "file": "src/main.server.ts",
+        "hash": "11653607448136507287"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "4927504514031276065"
+      },
+      {
+        "file": "src/styles.scss",
+        "hash": "2209023476659835730"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "66839692811478538"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1047940026627514556"
+      },
+      {
+        "file": "tsconfig.server.json",
+        "hash": "5896860408690188676"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      }
+    ]
+  }
+}
