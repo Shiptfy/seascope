@@ -29,5 +29,5 @@ jobs:
         with:
             ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
             BRANCH: gh-pages
-            FOLDER: dist/seascope/browser
+            FOLDER: /dist/seascope/browser
             rsync_args: --timeout=600 # Increase the timeout to 600 seconds
